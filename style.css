@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+html,
+body {
+    height: 100%;
+    color: var(--font-color);
+  }
+
+
+:root {
+    --spacing-1: 8px;
+    --spacing-2: 12px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+  
+    --border-radius: 12px;
+  
+    --font-color: #323232;
+  }
+
+h2 {
+    font-family: "Proza Libre", sans-serif;
+    margin: 0;
+    margin-bottom: var(--spacing-2);
+  }
+  
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0 var(--spacing-3);
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-3) 0;
+  }
+
+.navigation-items {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+  }
+
+.navigation-item {
+    margin: var(--spacing-1);
+  }
+
+.head-shot {
+    width: 300px;
+    border-radius: var(--border-radius);
+    flex-shrink: 0;
+  }
+
+.about-me-container {
+    display: flex;
+  }
+
+  button {
+    background-color: #323232;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  button:hover{
+    background-color: #727070;
+  }
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  ul {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+section {
+    padding: var(--spacing-3) 0;
+  }
+
+#logo {
+    margin: 0;
+  }
+
+.skill-logos {
+        float: left;
+        width:  45px;
+        height: 45px;
+        object-fit: cover;
+        margin: var(--spacing-1);
+}
+#skills i {
+  margin-right: 10px;
+}
+
+.contact-logos {
+  
+    margin: var(--spacing-1);
+}
+
+@media only screen and (max-width: 1028px) {
+    .about-me-container {
+      flex-direction: column;
+    }
+  }
+  
