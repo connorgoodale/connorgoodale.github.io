@@ -25,7 +25,6 @@ body {
 
 h2 {
     font-family: 'Roboto', sans-serif;
-
     margin: 0;
     margin-bottom: var(--spacing-2);
   }
@@ -67,6 +66,9 @@ nav {
 
 .about-me-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6em;
   }
 
   button {
@@ -112,10 +114,22 @@ section {
         margin: var(--spacing-1);
 }
 
-.contact-logos {
-  
-    margin: var(--spacing-1);
+.contact-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
 }
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-logos {
+    margin: var(--spacing-1);
+  }
 
 @media only screen and (max-width: 1028px) {
     .about-me-container {
